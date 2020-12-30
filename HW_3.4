@@ -1,0 +1,19 @@
+def summ(number_list_func):
+    for el in number_list_func:
+        if el != "exit" and el == int:
+            summ_number += el
+        elif el == "exit":
+            return
+
+
+
+while None:
+number_enter = input("Введите числа через пробел, если хотите выйти, введите exit\n >> ")
+number_list = map(int, number_enter.split())
+#number_list2 = map(int, number_list)
+
+print("Сумма чисел = ", summ(number_list))
+
+
+
+
