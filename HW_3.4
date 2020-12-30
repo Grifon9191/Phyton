@@ -1,24 +1,6 @@
-def summ(number_list_func):
-    for el in number_list_func:
-        if el != "exit" and el == int:
-            summ_number += el
-        elif el == "exit":
-            return
-
-
-
-while None:
-number_enter = input("Введите числа через пробел, если хотите выйти, введите exit\n >> ")
-number_list = map(int, number_enter.split())
-#number_list2 = map(int, number_list)
-
-print("Сумма чисел = ", summ(number_list))
-
-
-
-
 summ_number = 0
-while True:
+cycle = True
+while cycle == True:
     number_enter = input("Введите числа через пробел, если хотите выйти, введите exit\n >> ")
     number_list = number_enter.split()
     print(number_enter)
@@ -27,10 +9,7 @@ while True:
         if el != "exit":# and el == int:
             summ_number += int(el)
         elif el == "exit":
-
-        break
+            cycle = False
+            break
     print("Сумма чисел = ", summ_number)
-
-
-
 
