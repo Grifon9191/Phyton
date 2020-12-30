@@ -17,3 +17,20 @@ print("Сумма чисел = ", summ(number_list))
 
 
 
+summ_number = 0
+while True:
+    number_enter = input("Введите числа через пробел, если хотите выйти, введите exit\n >> ")
+    number_list = number_enter.split()
+    print(number_enter)
+#number_list2 = map(int, number_list)
+    for el in number_list:
+        if el != "exit":# and el == int:
+            summ_number += int(el)
+        elif el == "exit":
+
+        break
+    print("Сумма чисел = ", summ_number)
+
+
+
+
